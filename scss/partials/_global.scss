@@ -1,0 +1,108 @@
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+$graphite: #393939;
+$gray: #909090;
+$light-gray: #f7f7f7;
+$white: #fff;
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: $graphite;
+}
+
+h3 {
+  font-size: 2.063rem;
+  font-weight: 300;
+  color: $graphite;
+}
+
+header,
+footer {
+  background-color: $nitro-pink;
+}
+
+.header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.logo {
+  display: inline-block;
+  padding: 0;
+  margin-left: 1rem;
+
+  &__name {
+    font-size: 2.0625rem;
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+.logo__image,
+.social__logo--facebook,
+.social__logo--instagram,
+.social__logo--yelp {
+  width: 3.125em;
+  margin-bottom: 0;
+  vertical-align: bottom;
+}
+
+.site-nav {
+  display: inline-block;
+  padding-right: 2rem;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 2em;
+  }
+
+  &__anchor {
+    text-decoration: none;
+    color: $graphite;
+    font-size: 1.3125rem;
+
+    &--active {
+      color: $nitro-blue;
+    }
+  }
+}
+
+.discount__text--bold,
+.contact__detail--bold {
+  font-weight: 700;
+}
+
+.footer {
+  position: relative;
+
+  &__logo-bg {
+    position: absolute;
+    width: 120px;
+    opacity: 0.25;
+
+    &--left {
+      top: 20px;
+      left: -40px;
+    }
+    &--right {
+      top: 80px;
+      right: -40px;
+    }
+  }
+}

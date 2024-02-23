@@ -94,6 +94,28 @@ footer {
   right: -40px;
 }
 
+.button-container, .about-us__button-container, .products__all-products-container, .hero-action__button-container {
+  background-color: #5bacc3;
+  height: 3.5rem;
+  position: relative;
+  width: 11.25rem;
+}
+
+.button-style, .about-us__button, .products__all-products, .hero-action__button {
+  border: 2px solid #393939;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.3125rem;
+  height: 3.5rem;
+  padding: 0.625rem 0;
+  text-align: center;
+  text-decoration: none;
+  width: 11.25rem;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
 .hero {
   background-color: #fff0ed;
   display: flex;
@@ -113,32 +135,6 @@ footer {
   margin: 2rem 0;
 }
 
-.hero-action__button-container,
-.products__all-products-container,
-.about-us__button-container {
-  background-color: #5bacc3;
-  height: 3.5rem;
-  position: relative;
-  width: 11.25rem;
-}
-
-.hero__action-button,
-.products__all-products,
-.about-us__button {
-  border: 2px solid #393939;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 1.3125rem;
-  height: 3.5rem;
-  padding: 0.625rem 0;
-  text-align: center;
-  text-decoration: none;
-  width: 11.25rem;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-}
-
 .products {
   background-color: #f7f7f7;
   padding-bottom: 1rem;
@@ -154,12 +150,10 @@ footer {
 .products__all-products-container {
   margin: 2rem auto;
 }
-
-.products-container {
+.products__container {
   display: flex;
   justify-content: space-evenly;
 }
-
 .product {
   width: 20.625rem;
   height: 27.5rem;
@@ -227,9 +221,7 @@ footer {
   }
 }
 .bg-change {
-  animation-name: bg-change;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+  animation: bg-change 2.5s infinite;
 }
 
 .contact__title {
@@ -294,11 +286,6 @@ footer {
   top: -20px;
   left: -20px;
 }
-
-.click-effect:active {
-  transform: translate(5px, 5px);
-}
-
 .about-us__image-container:hover .about-us__image {
   animation: rotate 2s linear infinite;
 }
@@ -306,4 +293,8 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+.click-effect:active {
+  transform: translate(5px, 5px);
 }/*# sourceMappingURL=landing.css.map */
